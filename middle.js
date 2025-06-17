@@ -22,17 +22,17 @@ const assertArraysEqual = function(actual, expected) {
   };
 };
 
-const middle = function(arr){
-  const length = arr.length;
-  if (length <=2) return [];
+const middle = function(arr) {
+  const lengthCheck = arr.length;
+  if (lengthCheck <= 2) return [];
   const middleIndex = Math.floor(arr.length / 2);
-  if (arr.length % 2 === 0){
+  if (lengthCheck % 2 === 0) {
     return [arr[middleIndex - 1], arr[middleIndex]];
   }
   else return [arr[middleIndex]];
-  }
+};
 
-assertArraysEqual(middle([1]),[]); // => []
+assertArraysEqual(middle([1]), []); // => []
 assertArraysEqual(middle([1, 2]), []); // => []
 assertArraysEqual(middle([1, 2, 3]), [2]); // => [2]
 assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]); // => [3]
