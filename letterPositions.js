@@ -33,7 +33,7 @@ const assertArraysEqual = function (actual, expected) {
 
 const letterPositions = function (sentence) {
   const results = {};
-   for (i = 0; i < sentence.length; i++) {
+   for (let i = 0; i < sentence.length; i++) {
       const letterIndex = sentence[i]
       if (letterIndex === " ") continue;
       if (results[letterIndex]){
