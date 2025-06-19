@@ -36,14 +36,16 @@ const eqObjects = function(object1, object2) {
     if (isArray) {
       if (!eqArrays(values1, values2)) {
         return false;
-      } else {
-        if (values1 !== values2) {
-          return false;
-        }
+      }
+    }
+    else {
+      if (values1 !== values2) {
+        return false;
       }
     }
   }
   return true;
+
 };
 
 const thingsAboutMe = {
@@ -68,4 +70,4 @@ const updatedVibe = {
 
 assertEqual((eqObjects(thingsAboutMe, currentVibe)), true);
 
-assertEqual((eqObjects(updatedThingsAboutMe, updatedVibe)), true);
+assertEqual((eqObjects(updatedThingsAboutMe, updatedVibe)), false);
