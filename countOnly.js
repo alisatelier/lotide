@@ -1,29 +1,27 @@
 const assertEqual = function(actual, expected) {
-  const actualStr = actual !== undefined ? actual.toString() : "undefined";
-  const expectedStr = expected !== undefined ? expected.toString() : "undefined";
   if (actual === expected) {
-    console.log(`✅ Assertion Passed ${actualStr} === ${expectedStr}`);
+    console.log(`✅ Assertion Passed ${actual} === ${expected}`);
   } else {
-    console.log(`🛑 Assertion Failed: ${actualStr} !== ${expectedStr}`);
+    console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
 
 
 const countOnly = function(allItems, itemsToCount) {
-  const result = {}
+  const result = {};
 
-  for (let i = 0; i < allItems.length; i++){
-    const element = allItems[i]
-    if (itemsToCount[element] === true){
-      if (result[element]) { 
-        result[element] +=1
+  for (let i = 0; i < allItems.length; i++) {
+    const element = allItems[i];
+    if (itemsToCount[element]) {
+      if (result[element]) {
+        result[element] += 1;
       } else {
-        result[element] = 1
+        result[element] = 1;
       }
     }
   }
   return result;
-}
+};
 
 
 const firstNames = [
@@ -51,4 +49,4 @@ assertEqual(result1["Fang"], 2);
 assertEqual(result1["Agouhanna"], undefined);
 
 
-console.log(result1)
+console.log(result1);
