@@ -6,29 +6,27 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-// take in a string and return a count of each letter
-// loop through string of letters
-// if first time seeing letter, return letter as object.
-// subsequnt iterations, add letter to count
-
 const countLetters = function (inputString){
   const result = {};
 
   for (let letter of inputString){
-    const isolateLetter = letter.toLowerCase();
+    if (letter === " ") continue;
 
-    if (isolateLetter === " ") continue;
-
-     if (result[isolateLetter]){
-      result[isolateLetter] += 1;
+     if (result[letter]){
+      result[letter] += 1;
      }else {
-      result[isolateLetter] = 1
+      result[letter] = 1
      }
       }
-
-    console.log(result);
+      return result; 
   }
 
 countLetters("Hello");
 
 countLetters("lighthouse in the house")
+
+const result = countLetters("Hello");
+assertEqual(result['H'], 1);
+assertEqual(result['e'], 1);
+assertEqual(result['l'], 2);
+assertEqual(result['o'], 1);
