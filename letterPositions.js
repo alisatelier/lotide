@@ -28,8 +28,6 @@ const assertArraysEqual = function (actual, expected) {
     console.log(`🛑 Assertion Failed: ${actual.toString()} !== ${expected.toString()}`);
   };
      } ;
-//return all indices where the character is found.
-// multiple numbers may be needed to represent all the places in the string where it appears.
 
 const letterPositions = function (sentence) {
   const results = {};

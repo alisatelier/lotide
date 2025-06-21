@@ -15,9 +15,9 @@ const eqArrays = function(arr1, arr2){
 
 const assertArraysEqual = function (actual, expected) {
   if (eqArrays(actual, expected)) {
-    console.log(`✅ Assertion Passed ${actual.toString()} is equal to ${expected.toString()}`);
+    console.log(`✅ Assertion Passed ${actual.toString()} === ${expected.toString()}`);
   } else {
-    console.log(`🛑 Assertion Failed: ${actual.toString()} is not equal to ${expected.toString()}`);
+    console.log(`🛑 Assertion Failed: ${actual.toString()} !== ${expected.toString()}`);
   };
      } ;
 

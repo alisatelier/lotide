@@ -14,4 +14,5 @@ assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
 
 assertEqual(head([10, 20, 30]), 30);
 assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Lighthouse");
+
 assertEqual(head([]), undefined);

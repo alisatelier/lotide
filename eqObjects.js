@@ -20,16 +20,16 @@ const eqArrays = function(arr1, arr2) {
 };
 
 const eqObjects = function(object1, object2) {
-  let keys1 = Object.keys(object1);
-  let keys2 = Object.keys(object2);
+  const keys1 = Object.keys(object1);
+  const keys2 = Object.keys(object2);
 
   if (keys1.length !== keys2.length) {
     return false;
   }
 
   for (let key of keys1) {
-    let values1 = object1[key];
-    let values2 = object2[key];
+    const values1 = object1[key];
+    const values2 = object2[key];
 
     const isArray = Array.isArray(values1) && Array.isArray(values2);
 
