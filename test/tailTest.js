@@ -10,9 +10,6 @@ const words = ["Yo Yo", "Lighthouse", "Labs"];
 const newArray = tail(words);
 assertEqual(words.length, 3);
 
-console.log(newArray);
-console.log(words);
-
 assertEqual(tail(["test"]).length, 0); // tail of array with one element only should be empty
 assertEqual(tail([]).length, 0); // tail of an empty array should also be empty
 
