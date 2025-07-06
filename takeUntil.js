@@ -23,20 +23,14 @@ const assertArraysEqual = function (actual, expected) {
      
 
      const takeUntil = function(array, callback) {
-                                //Placeholder for new array
+
   const results = [];
-                                //loop through items in array.
   for (let item of array) {
-                                //if callback is (item)
     if (callback(item)) {
-                                 //stop the loop   
       break;
     }
-                                  //push items to placeholder 
     results.push(item);
   }
-
-                                  // return sliced array.
   return results;
 };
   

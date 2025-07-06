@@ -7,8 +7,8 @@ const assertEqual = function(actual, expected) {
 };
 
 let findKey = (object, callback) => {
-  for (let key of Object.keys(object)){
-    if(callback(object[key])){
+  for (let key of Object.keys(object)) {
+    if (callback(object[key])) {
       return key;
     }
   }
@@ -16,16 +16,16 @@ let findKey = (object, callback) => {
 };
 
 assertEqual(findKey({
-  "Sun": {rules: "Leo"},
-  "Moon": {rules: "Cancer"},
-  "Mercury": {rules: "Gemini"},
-  "Venus": {rules: "Taurus"},
-  "Mars": {rules: "Aries"},
-  "Jupiter": {rules: "Sagittarius"},
-  "Saturn": {rules: "Capricorn"},
-  "Uranus": {rules: "Aquarius"},
-  "Neptune": {rules: "Pisces"},
-  "Pluto": {rules: "Scorpio"}
+  Sun: { rules: "Leo" },
+ Moon: { rules: "Cancer" },
+ Mercury: { rules: "Gemini" },
+  Venus: { rules: "Taurus" },
+  Mars: { rules: "Aries" },
+  Jupiter: { rules: "Sagittarius" },
+  Saturn: { rules: "Capricorn" },
+  Uranus: { rules: "Aquarius" },
+  Neptune: { rules: "Pisces" },
+  Pluto: { rules: "Scorpio" }
 }, (x) => x.rules === "Cancer"), "Moon");
 
 
