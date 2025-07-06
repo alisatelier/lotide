@@ -2,6 +2,7 @@ const head   = require('./head');
 const tail   = require('./tail');
 const middle = require('./middle');
 const eqArrays = require('./eqArrays')
+const assertEqual = require('./assertEqual')
 const assertArraysEqual = require('./assertArraysEqual')
 const eqObjects = require('./eqObjects')
 const assertObjectsEqual = require('./assertObjectsEqual')
@@ -20,6 +21,7 @@ module.exports = {
   tail:   tail,
   middle: middle,
   eqArrays: eqArrays,
+  assertEqual: assertEqual,
   assertArraysEqual: assertArraysEqual,
   eqObjects: eqObjects,
   assertObjectsEqual: assertObjectsEqual,
