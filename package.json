@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@alisatelier/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "A simplified clone of Lodash implementing core utility functions for arrays and objects. Built for educational use",
+  "main": "index.js",
   "directories": {
     "test": "test"
   },
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/alisatelier/lotide.git"
   },
-  "author": "",
+  "author": "alisatelier",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/alisatelier/lotide/issues"
