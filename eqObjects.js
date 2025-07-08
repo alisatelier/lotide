@@ -1,23 +1,5 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Assertion Passed ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
 
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length !== arr2.length) {
-    return false;
-  }
-
-  for (let i = 0; i < arr1.length; i++) {
-    if (arr1[i] !== arr2[i]) {
-      return false;
-    }
-  }
-  return true;
-};
+const eqArrays = require("./eqArrays")
 
 const eqObjects = function(object1, object2) {
   const keys1 = Object.keys(object1);
@@ -47,27 +29,4 @@ const eqObjects = function(object1, object2) {
   return true;
 
 };
-
-const thingsAboutMe = {
-  writing: "A Courtship of Karma and Cosmos",
-  listeningTo: "Avatar Soundtrack",
-};
-
-const currentVibe = {
-  writing: "A Courtship of Karma and Cosmos",
-  listeningTo: "Avatar Soundtrack",
-};
-
-const updatedThingsAboutMe = {
-  writing: ["A Courtship of Karma and Cosmos", "Intuition Mission"],
-  listeningTo: ["Avatar Soundtrack", "Boyfriend's Grandpa Rock"],
-};
-
-const updatedVibe = {
-  writing: ["A Courtship of Karma and Cosmos", "Intuition Mission"],
-  listeningTo: ["Avatar Soundtrack", "Unique Genre Car EDM"],
-};
-
-assertEqual((eqObjects(thingsAboutMe, currentVibe)), true);
-
-assertEqual((eqObjects(updatedThingsAboutMe, updatedVibe)), false);
+module.exports = eqObjects;

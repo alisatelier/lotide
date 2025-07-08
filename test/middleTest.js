@@ -3,7 +3,7 @@
 const assert = require('chai').assert;
 const middle = require('../middle'); // adjust path if needed
 
-describe('middle()', () => {
+describe('middle', () => {
 
   it('returns [] for [1]', () => {
     assert.deepEqual(middle([1]), []);
