@@ -26,7 +26,7 @@ This project was created and published by me as part of my learnings at Lighthou
 
 The following functions are currently implemented:
 
-- #### [CountLetters()](./countLetters.js) : countLetters function takes a string and returns an object where each key is a letter (excluding spaces), and its value is the number of times that letter appears in the string.
+- #### [countLetters()](./countLetters.js) : countLetters function takes a string and returns an object where each key is a letter (excluding spaces), and its value is the number of times that letter appears in the string.
 
   example: Given the string: "My Intuition Made Me Do It" (The title of my published book), this function returns an object of the number of times each letter appears. { M: 3, y: 1, I: 3, n: 2, t: 3, u: 1, i: 3, o: 2, a: 1, d: 2, e: 2 }
 
@@ -127,7 +127,7 @@ The following functions are currently implemented:
 
 - #### [map()](./map.js) :map() takes two arguments: an array of items and a callback function to apply to each item. It returns a new array, where each element is the result of calling the callback on the corresponding element from the original array.
 
-  example: you're still working on more poetry and want to assign a pattern to the first letter of each word.
+  example: you're working on more poetry and want to assign a pattern to the first letter of each word.
 
   ```javascript
   const poemLine = "Ali lightly calls her exciting memory: you";
@@ -173,6 +173,7 @@ The following functions are currently implemented:
   //"Lesson 2: Norse Mythology",
   //"Lesson 3: The Planets",
   //"Lesson 4: The Zodiacs",
+  //]
   ```
 
 - #### [takeUntil()](./takeUntil.js) : takeUntil() iterates over an array and collects elements into a new array until the provided callback returns true. Once the callback returns true, the function stops adding items and returns the collected array. It does not include the item that caused the callback to return true.
