@@ -1,6 +1,6 @@
 {
   "name": "@alisatelier/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simplified clone of Lodash implementing core utility functions for arrays and objects. Built for educational use",
   "main": "index.js",
   "directories": {
